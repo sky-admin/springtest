@@ -8,7 +8,7 @@ import javax.validation.constraints.NotNull;
  */
 @Entity
 @Table(name = "t_user")
-public class User {
+public class CustomUser {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
@@ -27,20 +27,20 @@ public class User {
     private String major;
     private String academy;
 
-    public User(){    }
+    public CustomUser(){    }
 
-    public User(long id){
+    public CustomUser(long id){
         this.id = id;
     }
 
-    public User(String nickname,String password){
+    public CustomUser(String nickname, String password){
         this.nickname = nickname;
         this.password = password;
         this.status = 1;
         this.mail = "123@qq.com";
     }
 
-    public User(String no,String mail,String nickname,String avatar,String name,String password,int role_type,int status,String major,String academy){
+    public CustomUser(String no, String mail, String nickname, String avatar, String name, String password, int role_type, int status, String major, String academy){
         this.no = no;
         this.mail = mail;
         this.nickname = nickname;
