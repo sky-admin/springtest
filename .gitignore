@@ -7,3 +7,4 @@ release.properties
 dependency-reduced-pom.xml
 buildNumber.properties
 gs-rest-service.iml
+application.properties
